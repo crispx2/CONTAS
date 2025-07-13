@@ -78,9 +78,8 @@
 
   <button onclick="adicionarLinha()">Adicionar</button>
   <form method="POST" action="/exportar-word">
-  <button type="submit">Exportar Tudo para Word</button>
-</form>
-
+    <button type="submit">Exportar Tudo para Word</button>
+  </form>
 </div>
 
 <hr>
@@ -138,7 +137,7 @@
 
 <script>
   async function adicionarLinha() {
-    const area = document.getElementById('area').value.;
+    const area = document.getElementById('area').value; // ✅ Corrigido aqui
     const codigo = document.getElementById('codigo').value.trim();
     const cambista = document.getElementById('cambista').value.trim();
     const comissao = parseFloat(document.getElementById('comissao').value);
